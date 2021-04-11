@@ -5,7 +5,7 @@ from transformers import BertTokenizer, AlbertModel
 
 
 class albert_vector_engine:
-    def __init__(self, pretrained_path='./data/albert_chinese_tiny_pytorch', padding_idx=0):
+    def __init__(self, pretrained_path='./albert_chinese_tiny_pytorch', padding_idx=0):
         self.tokenizer = BertTokenizer.from_pretrained(pretrained_path)
         self.model = AlbertModel.from_pretrained(pretrained_path)
         self.padding_idx = padding_idx
